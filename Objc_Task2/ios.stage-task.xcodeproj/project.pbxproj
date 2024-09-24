@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65CBC2D62CA31FF9003C5306 /* NSObject+NSMutableArray_SortedInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CBC2D52CA31FF9003C5306 /* NSObject+NSMutableArray_SortedInsert.m */; };
 		8275DDD8264C16A100838828 /* ReverseBinary.md in Resources */ = {isa = PBXBuildFile; fileRef = 8275DDC5264C16A100838828 /* ReverseBinary.md */; };
 		8275DDDA264C16A100838828 /* ReverseBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8275DDC7264C16A100838828 /* ReverseBinary.m */; };
 		8275DDDB264C16A100838828 /* Pairs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8275DDC9264C16A100838828 /* Pairs.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65CBC2D42CA31FF9003C5306 /* NSObject+NSMutableArray_SortedInsert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSMutableArray_SortedInsert.h"; sourceTree = "<group>"; };
+		65CBC2D52CA31FF9003C5306 /* NSObject+NSMutableArray_SortedInsert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSMutableArray_SortedInsert.m"; sourceTree = "<group>"; };
 		8275DDC4264C16A100838828 /* ReverseBinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseBinary.h; sourceTree = "<group>"; };
 		8275DDC5264C16A100838828 /* ReverseBinary.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReverseBinary.md; sourceTree = "<group>"; };
 		8275DDC6264C16A100838828 /* ReverseBinaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseBinaryTests.m; sourceTree = "<group>"; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65CBC2D32CA31FD2003C5306 /* NSMutableArray+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65CBC2D42CA31FF9003C5306 /* NSObject+NSMutableArray_SortedInsert.h */,
+				65CBC2D52CA31FF9003C5306 /* NSObject+NSMutableArray_SortedInsert.m */,
+			);
+			path = "NSMutableArray+Extension";
+			sourceTree = "<group>";
+		};
 		8275DDC3264C16A100838828 /* Exercise-1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		8275DDD2264C16A100838828 /* Exercise-4 */ = {
 			isa = PBXGroup;
 			children = (
+				65CBC2D32CA31FD2003C5306 /* NSMutableArray+Extension */,
 				8275DDD7264C16A100838828 /* TwoDimensional.md */,
 				8275DDD3264C16A100838828 /* TwoDimensionalArraySorter.h */,
 				8275DDD6264C16A100838828 /* TwoDimensionalArraySorter.m */,
@@ -281,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8293ECA826346C7100CEE768 /* AppDelegate.m in Sources */,
+				65CBC2D62CA31FF9003C5306 /* NSObject+NSMutableArray_SortedInsert.m in Sources */,
 				8293ECB926346C7500CEE768 /* main.m in Sources */,
 				8275DDE3264C16A100838828 /* TwoDimensionalArraySorter.m in Sources */,
 				8275DDDB264C16A100838828 /* Pairs.m in Sources */,
