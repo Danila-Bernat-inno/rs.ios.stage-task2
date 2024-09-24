@@ -9,15 +9,9 @@
 
     if ([array count] > 0 && ![array[0] isKindOfClass:[NSArray class]]) { return @[]; }
 
-    Class currentSubarrayType;
 
     for (NSArray *subArray in array) {
-        if ([subArray count] > 0) {
-            currentSubarrayType = [subArray[0] class];
-        }
         for (id element in subArray) {
-            if ([element class] != currentSubarrayType) { return @[]; }
-
             if ([element isKindOfClass:[NSString class]]) {
                 [resultStrings insertObjectInSortedOrder:element];
             } else if ([element isKindOfClass:[NSNumber class]]) {
@@ -26,8 +20,14 @@
         }
     }
 
-    if ([resultStrings count] > 0) { return resultStrings; } else {
-        return resultNumbers;
+    if ([resultNumbers count] > 0 && [resultStrings count] > 0) {
+        return @[resultNumbers, resultStrings];
+    } else {
+        if ([resultNumbers count] > 0) {
+            return resultNumbers;
+        } else {
+            return resultStrings;
+        }
     }
 }
 

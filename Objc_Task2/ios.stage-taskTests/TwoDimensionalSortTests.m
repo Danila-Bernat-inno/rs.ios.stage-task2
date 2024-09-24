@@ -51,5 +51,12 @@
     XCTAssertEqualObjects(resultArray, @[]);
 }
 
+// I added my own test because the existing tests do not cover all the requirements of the task
+- (void)test5 {
+    NSArray *inputArray = @[@[@4, @6, @2], @[@1, @5, @3], @[@"Ben", @"Alex", @"Cris"], @[@"Desmond", @"Evan"], @[@8, @2, @7, @9]];
+    NSArray *resultArray = @[@[@1, @2, @2, @3, @4, @5, @6, @7, @8, @9], @[@"Alex", @"Ben", @"Cris", @"Desmond", @"Evan"]];
+    BOOL flag = [[self.sorter twoDimensionalSort: inputArray] isEqualToArray: resultArray];
+    XCTAssertTrue(flag);
+}
 
 @end
